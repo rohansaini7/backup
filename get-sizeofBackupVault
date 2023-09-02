@@ -1,0 +1,3 @@
+
+aws backup --region us-east-1 list-recovery-points-by-backup-vault --backup-vault-name YRP-BACKUP-VAULT --query 'RecoveryPoints[*].BackupSizeInBytes' --output json | jq add
+#change vault name
